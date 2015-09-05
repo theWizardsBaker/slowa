@@ -1,7 +1,7 @@
 class CreateOfficials < ActiveRecord::Migration
   def change
     create_table :officials do |t|
-      t.integer :official_id, index:true
+      t.integer :official_id, index: true, null: false
       t.references :profile
       t.string :first_name
       t.string :last_name
@@ -10,8 +10,8 @@ class CreateOfficials < ActiveRecord::Migration
       t.integer :cell_phone
       t.integer :home_phone
       t.string :email
-      t.boolean :active
-      t.references :address, as:addressable_location
+      t.boolean :active, default: true
+      t.references :address, foreign_key: true
       t.timestamps null: false
     end
   end

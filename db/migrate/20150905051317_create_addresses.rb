@@ -1,7 +1,7 @@
 class CreateAddresses < ActiveRecord::Migration
   def change
     create_table :addresses do |t|
-      t.belongs_to :addressable_location, polymorphic: true
+      t.belongs_to :addressable_location, polymorphic: true, index: true
       t.string :street
       t.string :city
       t.string :state

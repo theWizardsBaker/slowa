@@ -2,7 +2,7 @@ class CreateSchools < ActiveRecord::Migration
   def change
     create_table :schools do |t|
       t.string :name
-      t.belongs_to :address, index: true, foreign_key: true
+      t.references :address, foreign_key: true
       t.integer :phone
       t.string :AD_first_name
       t.string :AD_last_name
