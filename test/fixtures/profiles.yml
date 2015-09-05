@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  HS_years: 1
+  HS_level: MyString
+  HS_achievement: MyString
+  college_years: 1
+  college_level: MyString
+  college_achievement: MyString
+  college: MyString
+  high_school: MyString
+  wrestling_achievement: MyString
+  coach_little_league: MyString
+  coach_high_school: MyString
+  coach_college: MyString
+  coach_other: MyString
+  official_id: 
+  officiate_little_league: MyString
+  officiate_high_school: MyString
+  officiate_college: MyString
+  officiate: 
+  district: false
+  state: false
+  occupation: MyString
+  official_experience: MyString
+
+two:
+  HS_years: 1
+  HS_level: MyString
+  HS_achievement: MyString
+  college_years: 1
+  college_level: MyString
+  college_achievement: MyString
+  college: MyString
+  high_school: MyString
+  wrestling_achievement: MyString
+  coach_little_league: MyString
+  coach_high_school: MyString
+  coach_college: MyString
+  coach_other: MyString
+  official_id: 
+  officiate_little_league: MyString
+  officiate_high_school: MyString
+  officiate_college: MyString
+  officiate: 
+  district: false
+  state: false
+  occupation: MyString
+  official_experience: MyString

@@ -1,0 +1,89 @@
+<%= form_for(@school) do |f| %>
+  <% if @school.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@school.errors.count, "error") %> prohibited this school from being saved:</h2>
+
+      <ul>
+      <% @school.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :address_id %><br>
+    <%= f.text_field :address_id %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.number_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :AD_first_name %><br>
+    <%= f.text_field :AD_first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :AD_last_name %><br>
+    <%= f.text_field :AD_last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :AD_phone %><br>
+    <%= f.number_field :AD_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :AD_cell %><br>
+    <%= f.number_field :AD_cell %>
+  </div>
+  <div class="field">
+    <%= f.label :AD_extension %><br>
+    <%= f.number_field :AD_extension %>
+  </div>
+  <div class="field">
+    <%= f.label :AD_email %><br>
+    <%= f.text_field :AD_email %>
+  </div>
+  <div class="field">
+    <%= f.label :coach_first_name %><br>
+    <%= f.text_field :coach_first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :coach_last_name %><br>
+    <%= f.text_field :coach_last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :coach_phone %><br>
+    <%= f.number_field :coach_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :coach_cell %><br>
+    <%= f.number_field :coach_cell %>
+  </div>
+  <div class="field">
+    <%= f.label :coach_extension %><br>
+    <%= f.number_field :coach_extension %>
+  </div>
+  <div class="field">
+    <%= f.label :coach_email %><br>
+    <%= f.text_field :coach_email %>
+  </div>
+  <div class="field">
+    <%= f.label :dues_paid %><br>
+    <%= f.check_box :dues_paid %>
+  </div>
+  <div class="field">
+    <%= f.label :fees_paid %><br>
+    <%= f.check_box :fees_paid %>
+  </div>
+  <div class="field">
+    <%= f.label :active %><br>
+    <%= f.check_box :active %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

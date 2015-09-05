@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  belongs_to: 
+  date_off: 2015-09-05
+  time_off: 
+
+two:
+  belongs_to: 
+  date_off: 2015-09-05
+  time_off: 

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @official.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @official.last_name %>
+</p>
+
+<p>
+  <strong>Service years:</strong>
+  <%= @official.service_years %>
+</p>
+
+<p>
+  <strong>Work phone:</strong>
+  <%= @official.work_phone %>
+</p>
+
+<p>
+  <strong>Cell phone:</strong>
+  <%= @official.cell_phone %>
+</p>
+
+<p>
+  <strong>Home phone:</strong>
+  <%= @official.home_phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @official.email %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @official.active %>
+</p>
+
+<p>
+  <strong>Official:</strong>
+  <%= @official.official_id %>
+</p>
+
+<%= link_to 'Edit', edit_official_path(@official) %> |
+<%= link_to 'Back', officials_path %>

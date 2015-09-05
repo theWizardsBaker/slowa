@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  address_id: 
+  phone: 1
+  AD_first_name: MyString
+  AD_last_name: MyString
+  AD_phone: 1
+  AD_cell: 1
+  AD_extension: 1
+  AD_email: MyString
+  coach_first_name: MyString
+  coach_last_name: MyString
+  coach_phone: 1
+  coach_cell: 1
+  coach_extension: 1
+  coach_email: MyString
+  dues_paid: false
+  fees_paid: false
+  active: false
+
+two:
+  name: MyString
+  address_id: 
+  phone: 1
+  AD_first_name: MyString
+  AD_last_name: MyString
+  AD_phone: 1
+  AD_cell: 1
+  AD_extension: 1
+  AD_email: MyString
+  coach_first_name: MyString
+  coach_last_name: MyString
+  coach_phone: 1
+  coach_cell: 1
+  coach_extension: 1
+  coach_email: MyString
+  dues_paid: false
+  fees_paid: false
+  active: false

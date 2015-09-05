@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  home_team_id: 
+  visiting_team_id: 
+  meet_type: MyString
+  cancelled: false
+  match_date: 2015-09-05
+  head_official_id: 
+  keep_attendance: false
+  comments: MyString
+
+two:
+  home_team_id: 
+  visiting_team_id: 
+  meet_type: MyString
+  cancelled: false
+  match_date: 2015-09-05
+  head_official_id: 
+  keep_attendance: false
+  comments: MyString

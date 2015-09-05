@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Home team:</strong>
+  <%= @assignment.home_team %>
+</p>
+
+<p>
+  <strong>Visiting team:</strong>
+  <%= @assignment.visiting_team %>
+</p>
+
+<p>
+  <strong>Meet type:</strong>
+  <%= @assignment.meet_type %>
+</p>
+
+<p>
+  <strong>Cancelled:</strong>
+  <%= @assignment.cancelled %>
+</p>
+
+<p>
+  <strong>Match date:</strong>
+  <%= @assignment.match_date %>
+</p>
+
+<p>
+  <strong>Head official:</strong>
+  <%= @assignment.head_official %>
+</p>
+
+<p>
+  <strong>Keep attendance:</strong>
+  <%= @assignment.keep_attendance %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @assignment.comments %>
+</p>
+
+<%= link_to 'Edit', edit_assignment_path(@assignment) %> |
+<%= link_to 'Back', assignments_path %>

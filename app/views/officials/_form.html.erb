@@ -1,0 +1,53 @@
+<%= form_for(@official) do |f| %>
+  <% if @official.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@official.errors.count, "error") %> prohibited this official from being saved:</h2>
+
+      <ul>
+      <% @official.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :service_years %><br>
+    <%= f.number_field :service_years %>
+  </div>
+  <div class="field">
+    <%= f.label :work_phone %><br>
+    <%= f.number_field :work_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :cell_phone %><br>
+    <%= f.number_field :cell_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :home_phone %><br>
+    <%= f.number_field :home_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :active %><br>
+    <%= f.check_box :active %>
+  </div>
+  <div class="field">
+    <%= f.label :official_id %><br>
+    <%= f.number_field :official_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
